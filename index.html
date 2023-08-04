@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <title>CSS Inspection</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+  
+      h1 {
+        color: rgb(142, 26, 26);
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+      }
+  
+      p {
+        font-size: 1rem;
+        font-weight: normal;
+      }
+  
+      h2 {
+        font-weight: 500;
+      }
+  
+      .quiz {
+        margin: 20px;
+        text-align: left;
+      }
+  
+      .question {
+        font-size: 18px;
+        font-weight: normal;
+        text-align: left;
+        margin: 20px;
+      }
+  
+      .answer {
+        font-size: 16px;
+        font-weight: normal;
+        text-align: left;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  
+  <body data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
+    <h1>MycoMaster</h1>
+    <h2>Your ultimate mushroom quiz</h2>
+    <p>
+      Sometimes recognizing the different kinds of mushrooms can be tricky. To train mycophiles of any level to recognize 
+      our amazing mushy friends, I've decided to create this mushroom trivia. Enjoy!
+    </p>
+    <hr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Leccinum_aurantiacum.jpg/800px-Leccinum_aurantiacum.jpg" width="300" align="left">
+    <div class="quiz">
+      <div class="question">
+        Q.1 Is this mushroom toxic?
+      </div>
+      <div class="answer">
+        <input type="text" id="answer1">
+        <button onclick="checkAnswer1()">Submit</button>
+        <p id="result1">Correct!</p>
+      </div>
+      <div class="question">
+        Q.2 What is the font size of the h1?
+      </div>
+      <div class="answer">
+        <input type="text" id="answer2">
+        <button onclick="checkAnswer2()">Submit</button>
+        <p id="result2">Correct!</p>
+      </div>
+      <div class="question">
+        Q.3 What is the font weight of the h2?
+      </div>
+      <div class="answer">
+        <input type="text" id="answer3">
+        <button onclick="checkAnswer3()">Submit</button>
+        <p id="result3">Correct!</p>
+      </div>
+      <div class="question">
+        Q.4 What is the font family of the p?
+      </div>
+      <div class="answer">
+        <input type="text" id="answer4">
+        <button onclick="checkAnswer4()">Submit</button>
+        <p id="result4">Correct!</p>
+      </div>
+    </div>
+  
+  <script>
+    function checkAnswer1() {
+      var answer = document.getElementById("answer1").value;
+      if (answer.toLowerCase() === "no" || answer.toLowerCase() === "No") {
+        document.getElementById("result1").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result1").innerHTML = "Incorrect. Try again.";
+      }
+    }
+    function checkAnswer2() {
+      var answer = document.getElementById("answer2").value;
+      if (answer.toLowerCase() === "3rem" || answer.toLowerCase() === "3 rem") {
+        document.getElementById("result2").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result2").innerHTML = "Incorrect. Try again.";
+      }
+    }
+    function checkAnswer3() {
+      var answer = document.getElementById("answer3").value;
+      if (answer.toLowerCase() === "500") {
+        document.getElementById("result3").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result3").innerHTML = "Incorrect. Try again.";
+      }
+    }
+    function checkAnswer4() {
+      var answer = document.getElementById("answer4").value;
+      if (answer.toLowerCase() === "arial" || answer.toLowerCase() === "arial, sans-serif" || answer.toLowerCase() === "sans-serif" || answer.toLowerCase() === "sans serif") {
+        document.getElementById("result4").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result4").innerHTML = "Incorrect. Try again.";
+      }
+    }
+  </script>
+  
+  
+  </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
